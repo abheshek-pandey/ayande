@@ -7,8 +7,7 @@
             <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="utf-8" />
             <!--Title-->
             <title>Tandin's Ghrenta by Ayan De</title>
-    
-        <!--added by pandoc CSS1-->
+            <meta name="description" content="Tanin's Ghrenta by Ayan De. A fantasty short story about a mystical creature set in the mountains of Bhutan.">
             <!--favicon-->
             <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
             <!--CSS-->
@@ -28,18 +27,27 @@
   <!--Body-->
     <body>
 
-        <header class="topnav">
-            <a href="/ayande" title="Ayan De - Home">Ayan De</a>
-            <nav class="topnav-right" id="navRight">
-                <a href="/ayande/#about">About Me</a>
-                <a href="/ayande/#bibliography">Bibliography</a>
-                <a href="/ayande/#contact">Contact</a>
-                <!--<a href="/blog/index.html">Blog</a>-->
-                <!--Responsive--
-                <a href="javascript:void(0);" class="icon" onclick="myNavResponse()">
-                    <i class="material-symbols-sharp">Menu</i>
-                </a>
-            -->
+        <header class="site-header" id="site-header">
+            <nav class="topnav" id="myTopnav">
+                <a href="/ayande/" class="logo">Ayan De</a>
+                <div class="split">
+                    <a href="/ayande/#about">About</a>
+                    <a href="/ayande/#bibliography">Bibliography</a>
+                    <a href="/ayande/#contact">Contact</a>
+                    <button class="iconica place-items-center" id="theme-toggle-button">
+                        <span class="sun-icon">
+                            <i class="material-symbols-sharp">light_mode</i>
+                        </span>
+                        <span class="moon-icon">
+                            <i class="material-symbols-sharp">dark_mode</i>
+                        </span>
+                    </button>
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon menuMenu" onclick="menuButton()">
+                        <span class="open-menu-icon">
+                            <i class="material-symbols-sharp" id="menu">menu</i>
+                        </span>
+                    </a>
+                </div>
             </nav>
         </header>
 
@@ -48,7 +56,7 @@
                 <h1 id="the-tale-of-tandin-s-grhenta">The Tale of Tandin’s Grhenta</h1>
 
                 <figure>
-                    <img src="/assets/grhenta-colour.png" alt="Illustration of Tandin's Grenta, a green pig with wings.">
+                    <img src="/assets/ghrenta-colour.png" alt="Illustration of Tandin's Grenta, a green pig with wings.">
                 </figure>
                 
                 <p>Translated by Viscount Johnathan M Pauster, East India Company (December 1912)</p>
